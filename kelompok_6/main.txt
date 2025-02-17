@@ -1,0 +1,60 @@
+&CONTROL
+    calculation = "nscf"
+    max_seconds =  8.64000e+04
+    pseudo_dir  = "C:\Users\agnaa\.burai\.pseudopot"
+/
+
+&SYSTEM
+    a           =  4.00312e+00
+    c           =  1.31567e+01
+    degauss     =  1.00000e-02
+    ecutrho     =  2.25000e+02
+    ecutwfc     =  2.50000e+01
+    ibrav       = 4
+    nat         = 8
+    nbnd        = 32
+    ntyp        = 1
+    occupations = "smearing"
+    smearing    = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&DOS
+    degauss =  1.00000e-02
+    deltae  =  1.00000e-02
+    emax    =  5.00000e+01
+    emin    = -5.00000e+01
+    ngauss  = 0
+/
+
+&PROJWFC
+    degauss =  1.00000e-02
+    deltae  =  1.00000e-02
+    emax    =  5.00000e+01
+    emin    = -5.00000e+01
+    ngauss  = 0
+/
+
+K_POINTS {automatic}
+ 7  7  2  0 0 0
+
+ATOMIC_SPECIES
+Ge0+   72.61000  Ge.pbe-n-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Ge0+    0.000000   0.000000   5.352821
+Ge0+    0.000000   0.000000   7.803885
+Ge0+    0.000000   0.000000  11.931175
+Ge0+    0.000000   0.000000   1.225532
+Ge0+   -0.000000   2.311200   4.526676
+Ge0+    2.001558   1.155600   8.630031
+Ge0+    2.001558   1.155600  11.105029
+Ge0+   -0.000000   2.311200   2.051678
+
