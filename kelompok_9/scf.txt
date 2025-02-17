@@ -1,0 +1,38 @@
+&CONTROL
+    calculation = "scf"
+    max_seconds =  8.64000e+04
+    pseudo_dir  = "C:\Users\agnaa\.burai\.pseudopot"
+/
+
+&SYSTEM
+    a                         =  2.86304e+00
+    degauss                   =  1.00000e-02
+    ecutrho                   =  2.25000e+02
+    ecutwfc                   =  2.50000e+01
+    ibrav                     = 1
+    nat                       = 2
+    nspin                     = 1
+    ntyp                      = 1
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+    starting_magnetization(1) =  2.00000e-01
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  4.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+K_POINTS {automatic}
+ 4  4  4  0 0 0
+
+ATOMIC_SPECIES
+Fe0+   55.84500  Fe.pbe-nd-rrkjus.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Fe0+    0.000000   0.000000   0.000000
+Fe0+    1.431518   1.431518   1.431518
+
