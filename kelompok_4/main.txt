@@ -1,0 +1,62 @@
+&CONTROL
+    calculation = "nscf"
+    max_seconds =  8.64000e+04
+    pseudo_dir  = "C:\Users\agnaa\.burai\.pseudopot"
+/
+
+&SYSTEM
+    a                         =  4.98909e+00
+    c                         =  2.87331e+00
+    degauss                   =  1.00000e-02
+    ecutrho                   =  2.25000e+02
+    ecutwfc                   =  2.50000e+01
+    ibrav                     = 4
+    nat                       = 6
+    nbnd                      = 51
+    nspin                     = 1
+    ntyp                      = 2
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+    starting_magnetization(1) =  2.00000e-01
+    starting_magnetization(2) =  0.00000e+00
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  4.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&DOS
+    degauss =  1.00000e-02
+    deltae  =  1.00000e-02
+    emax    =  5.00000e+01
+    emin    = -5.00000e+01
+    ngauss  = 0
+/
+
+&PROJWFC
+    degauss =  1.00000e-02
+    deltae  =  1.00000e-02
+    emax    =  5.00000e+01
+    emin    = -5.00000e+01
+    ngauss  = 0
+/
+
+K_POINTS {automatic}
+ 6  6  8  0 0 0
+
+ATOMIC_SPECIES
+Ti2+   47.86700  Ti.pbe-sp-van_ak.UPF
+O2-    15.99940  O.pbe-rrkjus.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Ti2+    2.494544   1.440226   1.436657
+Ti2+   -0.000000   2.880451   1.436657
+Ti2+    0.000000   0.000000   0.000000
+O2-     1.510594   2.616426   0.000000
+O2-     1.967900   0.000000   0.000000
+O2-    -0.983950   1.704251   0.000000
+
